@@ -1,0 +1,404 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #0b1e35;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Banner with background image */
+.banner {
+    width: 100%;
+    height: 220px;
+    background-image: url('../img/headjp.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a dark transparent layer behind the text */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 24px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 80%;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #002855;
+}
+
+
+.content p {
+    width: 70%; /* 将段落文字宽度设置为60%，可以根据需要调整 */
+    margin: 0 auto; /* 自动设置左右外边距，确保居中 */
+    text-align: justify; /* 可选：让段落文字两端对齐 */
+    line-height: 1.6; /* 可选：增加行间距，提高可读性 */
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.large-image {
+    position: relative; /* 使子元素绝对定位 */
+    width: 100%; /* 设置图片宽度为100% */
+}
+
+.large-image img {
+    width: 100%; /* 设置图片宽度为100% */
+    height: auto; /* 保持图片比例 */
+    display: block;
+    margin: 0 auto;
+}
+
+.text-overlay {
+    position: absolute; /* 绝对定位 */
+    bottom: 20px; /* 距离底部的距离 */
+    left: 50%; /* 从左侧50%的位置 */
+    transform: translateX(-50%); /* 向左平移50%以居中 */
+    color: white; /* 字体颜色 */
+    text-align: center; /* 文本居中 */
+    background-color: rgba(0, 0, 0, 0.5); /* 可选：添加半透明背景以增强可读性 */
+    padding: 10px; /* 可选：添加内边距 */
+}
+
+.text-overlay h1 {
+    margin: 0; /* 去掉默认的 margin */
+}
+
+.text-overlay p a {
+    color: white; /* 链接颜色 */
+    text-decoration: underline; /* 下划线 */
+}
+
+h2 {
+    margin-bottom: 100px; /* 调整这个值以增加或减少间距 */
+    text-align: center; /* 可选：如果你想让标题居中 */
+}
+
+p {
+    width: 50%; /* 设置宽度为50% */
+    margin: 0 auto; /* 自动左右边距以居中对齐 */
+    text-align: center; /* 文本居中 */
+}
+body {
+    background-color: white; /* 设置网页底色为纯白 */
+}
+
+.latest-news {
+    margin-top: 150px; /* 增加上方内容与新部分之间的空间 */
+}
+
+.latest-news h3 {
+    text-align: center; /* 让 LATEST NEWS 标题居中 */
+    margin-bottom: 20px; /* 调整标题下方间距 */
+    font-size: 40px; /* 设置字体大小为24px */
+    color: #002855;
+}
+
+.latest-news p {
+    width: 50%; /* 设置宽度为50% */
+    margin: 0 auto; /* 自动左右边距以居中对齐 */
+    text-align: center; /* 文本居中 */
+}
+.web-pages {
+    margin-top: 40px; /* 上方与 LATEST NEWS 的间距 */
+}
+
+.web-page {
+    margin: 20px 0; /* 每个网页部分的上下间距 */
+    text-align: center; /* 每个网页部分文本居中 */
+}
+
+.web-page p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 1px dashed black; /* 使用蓝色的虚线 */
+    margin: 20px 0; /* 虚线上下间距 */
+}
+
+
+
+/* 底部样式 */
+footer {
+    padding: 10px;
+    background-color: #0b1e35; /* 深蓝色 */
+    color: white; /* 白色文字 */
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+/* 新增样式：两列菜单 */
+.footer-columns {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 平均分配列之间的空间 */
+}
+
+.footer-columns ul {
+    flex: 1; /* 每列占据相同的空间 */
+    padding: 0 10px; /* 添加左右内边距以分开列 */
+}
+
+
+
+/* 如果需要调整上面内容的样式 */
+.content {
+    padding: 20px; /* 给主内容部分内边距 */
+    background-color: white; /* 确保主内容是白色背景 */
+    color: black; /* 主内容字体颜色为黑色 */
+    margin: 20px; /* 添加外边距 */
+    border-radius: 8px; /* 可选：边角圆润 */
+    font-size: 25px; /* 调整文字大小 */
+}
+
+.slogan {
+    margin-top: 60px; /* 调整此值以增加或减少与上面内容的间距 */
+    text-align: center; /* 将活动口号居中 */
+    font-size: 20px; /* 设置活动口号的字体大小 */
+}
+h2 {
+    font-size: 50px; /* 设置 h2 的字体大小 */
+    margin-bottom: 40px; /* 调整标题下方的间距 */
+    color: #002855;
+    text-align: center; /* 将标题居中 */
+}
+.slogan p {
+    font-weight: bold; /* 将文本加粗 */
+    font-size: 18px; /* 可选：调整字体大小 */
+    margin-top: 10px; /* 可选：调整与上面内容的间距 */
+    text-align: center; /* 可选：居中对齐 */
+    text-align: center; /* Center text in the schedule */
+}
+
+.schedule {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.event {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed lightgray;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.event .time {
+    text-align: center;
+    flex-basis: 70%; /* Time takes up 30% of the space */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.event .description {
+    flex-basis: 65%; /* Description takes up 65% of the space */
+    text-align: left;
+    font-size: 20px;
+}
+
+.custom-text {
+    font-size: 25px; /* 调整为所需的字体大小 */
+    font-weight: bold; /* 设置为粗体 */
+    margin: 0 auto 40px; /* 上下外边距为 0，左右外边距为自动，以确保居中 */
+    width: fit-content; /* 根据内容的宽度调整 */
+    text-align: center; /* 文本居中 */
+}
+
+
+
+.location-banner {
+    width: 100%;
+    overflow: hidden; /* 确保图片不溢出 */
+    background-size: cover; /* 适应容器 */
+}
+
+.location-banner img {
+    width: 100%; /* 让图片适应容器宽度 */
+    height: auto; /* 保持图片纵横比 */
+    background-size: cover; /* 适应容器 */
+}
+
+/* Contact Page Styles */
+
+/* Contact section layout */
+.contact-section {
+    width: 100%;
+    margin: 40 auto;
+    padding: 40px; /* 外边距 */
+
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 70px;
+    color: #002855; /* 设置标题为深蓝色 */
+    margin-bottom: 40px; /* 增加标题下方间距 */
+}
+
+/* Contact info layout */
+.contact-info {
+    width: 100%; /* 使 contact-info 宽度适应整个容器 */
+    background-color: #0b1e35; /* 设置背景颜色为深蓝色 */
+    padding: 40px; /* 内边距以保持内容不贴边，增加至40px */
+    color: white; /* 设置文字颜色为白色 */
+}
+
+.contact-info div {
+    margin-bottom: 60px; /* 增加每个部分之间的距离 */
+}
+
+.contact-info p {
+    font-size: 18px; /* 调整字体大小 */
+    color: white; /* 设置文字颜色为白色 */
+}
+
+.contact-info a {
+    color: #4fc3f7; /* 邮箱等链接使用亮色蓝 */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+}
+.contact-info div h3 {
+    font-size: 24px;
+    margin-bottom: 15px; /* 设置 h3 下方的距离 */
+}
+
+.contact-info div p {
+    font-size: 16px;
+    color: white;
+    margin-top: 0; /* 如果需要，可以调整 p 的上边距 */
+}
+
+
+.organization-section {
+    margin: 50px 0; /* 设置上下间距 */
+    padding: 20px; /* 调整内边距 */
+    background-color: #bae3e8; /* 背景色 */
+    border: 1px solid #bae3e8; /* 边框 */
+    text-align: center; /* 使所有文本居中 */
+}
+
+.role-title, .description {
+    display: inline-block; /* 让它们并排显示 */
+    vertical-align: middle; /* 垂直对齐方式 */
+    margin: 0; /* 清除默认上下外边距 */
+    padding: 0 0px; /* 添加左右内边距，避免过于紧凑 */
+    font-size: 20px; /* 调整为所需的字体大小 */
+}
+ 
+.organization-title {
+    font-size: 35px; /* 调整为所需的字体大小 */
+    margin-bottom: 30px; /* 设置下方距离 */
+    text-align: center; /* 确保标题居中 */
+}
+
+.event {
+    margin-bottom: 10px; /* 各个角色之间的间距 */
+    line-height: 1.6; /* 行高，调整内容的垂直对齐感 */
+    vertical-align: middle; /* 垂直对齐方式 */
+}
+
+
+.content-section {
+    margin-bottom: 40px; /* 调整这个值以增加或减少上下间距 */
+}

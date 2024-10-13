@@ -255,7 +255,7 @@ h2 {
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px dashed lightgray;
+    border-bottom: 2px dashed lightgray;
     padding: 20px 0;
     margin: 20px 0;
 }
@@ -375,15 +375,29 @@ h2 {
     padding: 20px; /* 调整内边距 */
     background-color: #bae3e8; /* 背景色 */
     border: 1px solid #bae3e8; /* 边框 */
-    text-align: center; /* 使所有文本居中 */
+    text-align: left; /* 全局左对齐 */
 }
 
-.role-title, .description {
-    display: inline-block; /* 让它们并排显示 */
-    vertical-align: middle; /* 垂直对齐方式 */
-    margin: 0; /* 清除默认上下外边距 */
-    padding: 0 0px; /* 添加左右内边距，避免过于紧凑 */
-    font-size: 20px; /* 调整为所需的字体大小 */
+.event {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: flex-start; /* 水平左对齐 */
+    margin-bottom: 15px; /* 每个 event 的底部间距 */
+    margin-left: 200px;
+}
+
+.role-title {
+    font-size: 20px; /* 调整字体大小 */
+    margin-right: 15px; /* 增加右侧间距 */
+    font-weight: bold; /* 加粗 */
+    text-align: left; /* 确保文本左对齐 */
+    width: 350px; /* 设置固定宽度，确保对齐 */
+}
+
+.description {
+    font-size: 20px; /* 调整字体大小 */
+    text-align: left; /* 左对齐 */
+    flex: 1; /* 占据剩余空间 */
 }
  
 .organization-title {
@@ -392,13 +406,78 @@ h2 {
     text-align: center; /* 确保标题居中 */
 }
 
-.event {
-    margin-bottom: 10px; /* 各个角色之间的间距 */
-    line-height: 1.6; /* 行高，调整内容的垂直对齐感 */
-    vertical-align: middle; /* 垂直对齐方式 */
-}
-
 
 .content-section {
     margin-bottom: 40px; /* 调整这个值以增加或减少上下间距 */
 }
+
+
+.divider {
+    border: none; /* 不显示默认边框 */
+    border-top: 1.5px dashed lightgray; /* 虚线样式 */
+    margin: 20px 0; /* 上下外边距 */
+}
+
+.schedules {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative; /* 使伪元素的定位基于此元素 */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.presentation-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.presentation-table .number {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.presentation-table .author {
+    width: 30%;
+    font-weight: normal;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.presentation-table .title {
+    width: 60%;
+    text-align: left;
+    font-weight: normal;
+}
+
+.presentation-table td {
+    padding: 15px 0;
+    vertical-align: top;
+}
+

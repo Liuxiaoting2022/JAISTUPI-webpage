@@ -46,12 +46,12 @@
 @media (max-width: 600px) {
     .header-container {
         flex-direction: column;
-        text-align: center;
+        text-align: left; /* 修改为左对齐 */
         gap: 10px; /* 减少在手机上的间距 */
     }
     
     .header-title {
-        text-align: center;
+        text-align: left; /* 修改为左对齐 */
         margin-bottom: 20px;
     }
     
@@ -59,9 +59,10 @@
         font-size: 16px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 20px; /* 增加左右内边距，避免文字太长 */
-        white-space: nowrap; /* 避免换行，保持文字在一行显示 */
-        overflow: hidden;
-        text-overflow: ellipsis; /* 如果文字过长，显示省略号 */
+        /* 移除以下两行以确保文字全部显示 */
+        white-space: normal; /* 允许文字换行 */
+        /* overflow: hidden; */ /* 不需要这个属性 */
+        /* text-overflow: ellipsis; */ /* 不需要这个属性 */
     }
 
     .logo-container img {

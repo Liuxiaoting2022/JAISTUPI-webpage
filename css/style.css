@@ -1,4 +1,4 @@
-er/* Reset some basic styles */
+/* Reset some basic styles */
 
 
 
@@ -60,13 +60,15 @@ er/* Reset some basic styles */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 20px; /* 增加左右内边距，避免文字太长 */
         white-space: nowrap; /* 避免换行，保持文字在一行显示 */
-
+        overflow: hidden;
+        text-overflow: ellipsis; /* 如果文字过长，显示省略号 */
     }
 
     .logo-container img {
         max-width: 100px; /* 调整图片大小以适应手机屏幕 */
     }
 }
+
 
 
 
@@ -361,46 +363,50 @@ footer {
 }
 
 /* Contact Page Styles */
-
-/* Contact section layout */
+/* General layout for Contact Section */
 .contact-section {
     width: 100%;
-    margin: 40 auto;
-    padding: 40px; /* 外边距 */
-
+    margin: 40px auto;
+    padding: 40px;
     text-align: center;
 }
 
 .contact-title {
     font-size: 70px;
-    color: #002855; /* 设置标题为深蓝色 */
-    margin-bottom: 40px; /* 增加标题下方间距 */
+    color: #002855;
+    margin-bottom: 40px;
 }
 
-/* Contact info layout */
+/* Contact Info Layout */
 .contact-info {
-    width: 100%; /* 使 contact-info 宽度适应整个容器 */
-    background-color: #0b1e35; /* 设置背景颜色为深蓝色 */
-    padding: 40px; /* 内边距以保持内容不贴边，增加至40px */
-    color: white; /* 设置文字颜色为白色 */
+    width: 100%;
+    background-color: #0b1e35;
+    padding: 40px;
+    color: white;
 }
 
 .contact-info div {
-    margin-bottom: 60px; /* 增加每个部分之间的距离 */
+    margin-bottom: 60px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .contact-info p {
-    font-size: 18px; /* 调整字体大小 */
-    color: white; /* 设置文字颜色为白色 */
+    font-size: 18px;
+    margin-top: 0;
 }
 
+/* Link style */
 .contact-info a {
-    color: #4fc3f7; /* 邮箱等链接使用亮色蓝 */
+    color: #4fc3f7;
     text-decoration: none;
 }
 
 .contact-info a:hover {
-    text-decoration: underline; /* 悬停时显示下划线 */
+    text-decoration: underline;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -410,29 +416,49 @@ footer {
     }
 
     .contact-title {
-        font-size: 32px;
+        font-size: 40px;
     }
-}
 
-@media (max-width: 480px) {
-    .contact-title {
-        font-size: 28px;
+    .contact-info {
+        padding: 30px;
+    }
+
+    .contact-info div {
+        margin-bottom: 40px;
+    }
+
+    .contact-info h3 {
+        font-size: 22px;
     }
 
     .contact-info p {
         font-size: 16px;
     }
 }
-.contact-info div h3 {
-    font-size: 24px;
-    margin-bottom: 15px; /* 设置 h3 下方的距离 */
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 32px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-info div {
+        margin-bottom: 30px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
 }
 
-.contact-info div p {
-    font-size: 16px;
-    color: white;
-    margin-top: 0; /* 如果需要，可以调整 p 的上边距 */
-}
 
 
 .organization-section {

@@ -39,15 +39,15 @@
 }
 
 /* 手机端响应式调整 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header-container {
         flex-direction: column;
-        text-align: left; /* 修改为左对齐 */
+        text-align: center;
         gap: 10px; /* 减少在手机上的间距 */
     }
     
     .header-title {
-        text-align: left; /* 修改为左对齐 */
+        text-align: center;
         margin-bottom: 20px;
     }
     
@@ -55,17 +55,14 @@
         font-size: 16px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 20px; /* 增加左右内边距，避免文字太长 */
-        /* 移除以下两行以确保文字全部显示 */
-        white-space: normal; /* 允许文字换行 */
-        /* overflow: hidden; */ /* 不需要这个属性 */
-        /* text-overflow: ellipsis; */ /* 不需要这个属性 */
+        white-space: nowrap; /* 避免换行，保持文字在一行显示 */
+
     }
 
     .logo-container img {
         max-width: 100px; /* 调整图片大小以适应手机屏幕 */
     }
 }
-
 
 * {
     margin: 0;
@@ -461,7 +458,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .contact-title {
         font-size: 32px;
     }

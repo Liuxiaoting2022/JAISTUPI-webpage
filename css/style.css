@@ -1,4 +1,71 @@
 /* Reset some basic styles */
+
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: left;
+    width: 60%; /* 例如占据60%的宽度，可以根据需要调整 */
+    margin-right: 20px; /* 或者其他适当的值 */
+    
+}
+
+.header-title h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px; /* 添加这个属性，增加 h1 和 p 之间的间距 */
+    font-weight: bold;
+}
+
+.header-title p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2; /* 调整行高，增加行距 */
+    white-space: normal;
+    max-width: 600px; /* 控制文字宽度 */
+}
+
+.logo-container {
+    flex: 1; /* logo部分占较少的空间 */
+    text-align: right;
+}
+
+.logo-container img {
+    max-width: 250px; /* 控制logo的最大宽度 */
+    height: auto; /* 保持logo的宽高比 */
+}
+
+/* 手机端响应式调整 */
+@media (max-width: 800px) {
+    .header-title {
+        width: 90%; /* 当屏幕较小时，扩展到90%的宽度 */
+        text-align: center; /* 手机端居中对齐 */
+    }
+
+
+    
+    .header-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .logo-container img {
+        max-width: 100px;
+    }
+}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -255,7 +322,6 @@ h2 {
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    
     padding: 20px 0;
     margin: 20px 0;
 }
@@ -371,11 +437,11 @@ h2 {
 
 
 .organization-section {
-    margin: 50px 0; /* 设置上下间距 */
+    margin: 20px; /* 设置上下间距 */
     padding: 20px; /* 调整内边距 */
     background-color: #bae3e8; /* 背景色 */
     border: 1px solid #bae3e8; /* 边框 */
-    text-align: left; /* 全局左对齐 */
+   
 }
 
 .event {

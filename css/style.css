@@ -51,7 +51,7 @@
     }
     
     .header-title p {
-        font-size: 14px; /* 在手机端调整字体大小 */
+        font-size: 12px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 10px; /* 增加左右内边距，避免文字太长 */
         white-space: nowrap; /* 避免换行，保持文字在一行显示 */
@@ -179,7 +179,7 @@ main {
         font-size: 16px; /* 减小段落字体大小，提高可读性 */
         line-height: 1.5; /* 行高略微减小 */
         text-align: left; /* 取消两端对齐，改为左对齐 */
-        margin-top: 0; /* 设置标题底部边距，以调整与段落的距离 */
+        margin-top: 5; /* 设置标题底部边距，以调整与段落的距离 */
         
     }
 }

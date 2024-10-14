@@ -52,7 +52,7 @@
     }
     
     .header-title p {
-        font-size: 16px; /* 在手机端调整字体大小 */
+        font-size: 14px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 10px; /* 增加左右内边距，避免文字太长 */
         white-space: nowrap; /* 避免换行，保持文字在一行显示 */

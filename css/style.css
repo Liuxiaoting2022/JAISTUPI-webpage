@@ -322,15 +322,14 @@ footer {
     margin-bottom: 10px;
 }
 
-/* 新增样式：两列菜单 */
 .footer-columns {
-    display: flex; /* 使用 flexbox 布局 */
-    justify-content: space-between; /* 平均分配列之间的空间 */
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-columns ul {
-    flex: 1; /* 每列占据相同的空间 */
-    padding: 0 10px; /* 添加左右内边距以分开列 */
+    flex: 1;
+    padding: 0 10px;
 }
 
 /* 响应式布局：隐藏 Quick Navigation 部分和 footer-columns */
@@ -364,6 +363,8 @@ footer {
         font-size: 12px;
     }
 }
+
+
 .custom-text {
     font-size: 25px; /* 调整为所需的字体大小 */
     font-weight: bold; /* 设置为粗体 */

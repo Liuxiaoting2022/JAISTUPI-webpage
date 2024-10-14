@@ -333,7 +333,36 @@ footer {
     padding: 0 10px; /* 添加左右内边距以分开列 */
 }
 
+/* 响应式布局：隐藏 footer-columns 并调整 footer-section 布局 */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* 纵向布局 */
+        align-items: center;
+        text-align: center;
+    }
 
+    .footer-section {
+        margin-bottom: 20px; /* 增加底部间距 */
+    }
+
+    .footer-columns {
+        display: none; /* 隐藏 footer-columns 部分 */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-section h3 {
+        font-size: 16px; /* 减小标题字体 */
+    }
+
+    .footer-section p {
+        font-size: 12px; /* 减小段落字体 */
+    }
+}
 
 .custom-text {
     font-size: 25px; /* 调整为所需的字体大小 */

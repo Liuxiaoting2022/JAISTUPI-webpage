@@ -1,20 +1,16 @@
 /* Reset some basic styles */
 
-
-
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     margin-left: 100px;
-   
 }
 
 .header-title {
     flex-grow: 2;
-    text-align: left;
-    
+    text-align: left;  
 }
 
 .header-title h1 {
@@ -69,8 +65,6 @@
         max-width: 100px; /* 调整图片大小以适应手机屏幕 */
     }
 }
-
-
 
 
 * {

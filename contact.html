@@ -25,7 +25,10 @@
     </header>
 
     <nav>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- 汉堡菜单图标 -->
+        </div>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="overview.html">Overview</a></li>
             <li><a href="program.html">Program</a></li>
@@ -33,6 +36,15 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        // JavaScript 控制汉堡菜单的展开/收起
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
 
     <main>
         <section class="contact-section">

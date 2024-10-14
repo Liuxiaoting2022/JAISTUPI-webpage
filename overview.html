@@ -47,12 +47,28 @@
 
 
     <main>
-        <section class="content">
-            <h2>Overview</h2>
-            <p>The JAIST-UPI Student Academic Exchange Event is a unique platform that brings together students from Japan Advanced Institute of Science and Technology (JAIST) and Universitas Pendidikan Indonesia (UPI) to exchange research ideas and foster academic collaboration. The event will feature presentations, discussions, and networking opportunities.</p>
+<section class="content">
+    <h2>Overview</h2>
+    <p>The JAIST-UPI Student Academic Exchange Event is a unique platform that brings together students from Japan Advanced Institute of Science and Technology (JAIST) and Universitas Pendidikan Indonesia (UPI) to exchange research ideas and foster academic collaboration. The event will feature presentations, discussions, and networking opportunities.</p>
     
-    
-        </section>
+    <p>
+        Detail information is available through this password-protected link. Please contact the organizer for access: 
+        <a href="#" onclick="accessAbstractBook()">Abstract Book</a>
+    </p>
+
+    <script>
+        function accessAbstractBook() {
+            const password = prompt("パスワードを入力してください:");
+            const correctPassword = "2024jaistupi";  // 设置正确的密码
+
+            if (password === correctPassword) {
+                window.location.href = "pdfs/JAIST_UPI_PROGRAM_ver2.pdf";  // 替换为アブストラクトブック的链接
+            } else {
+                alert("パスワードが間違っています。");
+            }
+        }
+    </script>
+</section>
 
 
         <div class="large-image">

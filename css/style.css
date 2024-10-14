@@ -216,6 +216,22 @@ main {
     padding: 10px; /* 可选：添加内边距 */
 }
 
+
+/* 隐藏移动设备上的内容 */
+@media (max-width: 768px) {
+    .text-overlay {
+        display: none;
+    }
+}
+
+/* 在桌面设备上显示内容 */
+@media (min-width: 769px) {
+    .text-overlay {
+        display: block;
+    }
+}
+
+
 .text-overlay h1 {
     margin: 0; /* 去掉默认的 margin */
 }

@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    margin-left: 100px;
+    margin-right: 220px;
 }
 
 .header-title {
@@ -33,16 +35,12 @@
     gap: 20px;
 }
 
-.logo-container img {
-    max-width: 250px;
-    height: auto;
-}
-
 /* 手机端响应式调整 */
 @media (max-width: 600px) {
     .header-container {
         flex-direction: column;
         text-align: center;
+        gap: 10px; /* 减少在手机上的间距 */
     }
     
     .header-title {
@@ -50,8 +48,17 @@
         margin-bottom: 20px;
     }
     
+    .header-title p {
+        font-size: 16px; /* 在手机端调整字体大小 */
+        line-height: 1.4; /* 增加行高以改善排版 */
+        padding: 0 20px; /* 增加左右内边距，避免文字太长 */
+        white-space: nowrap; /* 避免换行，保持文字在一行显示 */
+        overflow: hidden;
+        text-overflow: ellipsis; /* 如果文字过长，显示省略号 */
+    }
+
     .logo-container img {
-        max-width: 100px;
+        max-width: 100px; /* 调整图片大小以适应手机屏幕 */
     }
 }
 

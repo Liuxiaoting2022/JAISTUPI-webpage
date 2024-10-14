@@ -1,5 +1,4 @@
 /* Reset some basic styles */
-
 .header-container {
     display: flex;
     align-items: center;
@@ -55,7 +54,8 @@
         font-size: 14px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */
         padding: 0 10px; /* 增加左右内边距，避免文字太长 */
-        white-space: nowrap; /* 避免换行，保持文字在一行显示 */
+       /* white-space: nowrap; /* 避免换行，保持文字在一行显示 */
+         white-space: normal; /* 允许换行，保持文字在一行显示 */
         text-align: left; /* 确保文本左对齐 */
         margin-left: 0; /* 设置左外边距为0，避免偏移 */
 
@@ -136,8 +136,6 @@ nav ul li a {
         margin: 10px 0;
     }
 }
-
-
 
 
 

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin-left: 200px;
+    margin-left: 100px;
    
 }
 
@@ -34,7 +34,7 @@
 .logo-container {
     display: flex;
     gap: 20px;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 .logo-container img {
@@ -68,7 +68,6 @@
         max-width: 100px; /* 调整图片大小以适应手机屏幕 */
     }
 }
-
 
 
 
@@ -341,7 +340,6 @@ footer {
 
 
 
-
 .custom-text {
     font-size: 25px; /* 调整为所需的字体大小 */
     font-weight: bold; /* 设置为粗体 */
@@ -481,7 +479,6 @@ footer {
 }
 
 
-
 /* 针对手机设备的优化 */
 @media (max-width: 768px) {
     .event {
@@ -495,6 +492,7 @@ footer {
         font-size: 18px; /* 减小字体，适应手机 */
         text-align: left; /* 保持左对齐 */
         margin-right: 0; /* 移除右侧间距 */
+        
     }
 
     .organization-title {
@@ -506,6 +504,9 @@ footer {
         padding: 15px; /* 减少内边距 */
     }
 }
+
+
+
 
 
 .divider {
@@ -601,10 +602,10 @@ footer {
         font-size: 16px; /* 减小字体大小，增强可读性 */
     }
 
-
-     .presentation-table .author {
+    .presentation-table .author {
         font-weight: bold;
     }
+
     .presentation-table .number {
         display: none; /* 隐藏序号列以节省空间 */
     }

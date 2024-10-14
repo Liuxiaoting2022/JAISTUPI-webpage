@@ -43,11 +43,11 @@
     .header-container {
         flex-direction: column;
         text-align: center;
-        gap: 10px; /* 减少在手机上的间距 */
+        gap: 20px; /* 减少在手机上的间距 */
     }
     
     .header-title {
-        text-align: center;
+        text-align: left;
         margin-bottom: 20px;
     }
     

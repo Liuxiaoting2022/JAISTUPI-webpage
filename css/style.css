@@ -496,6 +496,32 @@ footer {
 }
 
 
+
+/* 针对手机设备的优化 */
+@media (max-width: 768px) {
+    .event {
+        flex-direction: column; /* 在小屏幕上让每个 .event 的内容垂直排列 */
+        align-items: flex-start; /* 内容左对齐 */
+    }
+
+    .role-title, .description {
+        width: 100%; /* 在手机上让每个块占满屏幕宽度 */
+        font-size: 18px; /* 减小字体，适应手机 */
+        text-align: left; /* 保持左对齐 */
+        margin-right: 0; /* 移除右侧间距 */
+    }
+
+    .organization-title {
+        font-size: 28px; /* 减小标题字体大小以适应小屏幕 */
+    }
+
+    .organization-section {
+        margin: 10px; /* 减少外边距以适应小屏幕 */
+        padding: 15px; /* 减少内边距 */
+    }
+}
+
+
 .divider {
     border: none; /* 不显示默认边框 */
     border-top: 1.5px dashed lightgray; /* 虚线样式 */

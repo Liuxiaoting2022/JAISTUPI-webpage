@@ -563,5 +563,36 @@ footer {
     vertical-align: top;
 }
 
+/* 针对手机设备的优化 */
+@media (max-width: 768px) {
+    .schedules {
+        width: 100%; /* 在手机上让 .schedules 占满屏幕 */
+        padding: 10px; /* 减少内边距 */
+    }
 
+    .section-header {
+        flex-direction: column; /* 垂直堆叠时间和描述 */
+        align-items: flex-start; /* 左对齐 */
+    }
 
+    .section-header h3, .time {
+        font-size: 1.2em; /* 调整字体大小适应手机 */
+        margin-bottom: 10px; /* 增加下方间距 */
+    }
+
+    .presentation-table .author, .presentation-table .title {
+        width: 100%; /* 在手机上占满宽度 */
+        display: block; /* 让作者和标题独占一行 */
+        padding-right: 0; /* 移除右边距 */
+        font-size: 16px; /* 减小字体大小，增强可读性 */
+    }
+
+    .presentation-table .number {
+        display: none; /* 隐藏序号列以节省空间 */
+    }
+
+    .presentation-table td {
+        padding: 10px 0; /* 减小单元格间距 */
+        font-size: 16px; /* 减小字体大小 */
+    }
+}

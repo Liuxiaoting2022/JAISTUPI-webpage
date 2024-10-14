@@ -173,6 +173,7 @@ main {
 
     .content h2 {
         font-size: 28px; /* 减小标题字体大小 */
+        margin-bottom: 10px; /* 设置标题底部边距，以调整与段落的距离 */
     }
 
     .content p {

@@ -193,6 +193,25 @@ main {
 }
 
 
+/* 针对手机设备的样式调整 */
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* 减小主内容的宽度，使其更适应手机屏幕 */
+        padding: 15px; /* 调整内边距 */
+    }
+
+    .content h2 {
+        font-size: 28px; /* 减小标题字体大小 */
+    }
+
+    .content p {
+        width: 100%; /* 让段落占据整个屏幕宽度 */
+        font-size: 16px; /* 减小段落字体大小，提高可读性 */
+        line-height: 1.5; /* 行高略微减小 */
+        text-align: left; /* 取消两端对齐，改为左对齐 */
+    }
+}
+
 .large-image {
     position: relative; /* 使子元素绝对定位 */
     width: 100%; /* 设置图片宽度为100% */
@@ -217,6 +236,17 @@ main {
 }
 
 
+.text-overlay h1 {
+    margin: 0; /* 去掉默认的 margin */
+}
+
+.text-overlay p{
+    color: white; /* 链接颜色 */
+    text-decoration: underline; /* 下划线 */
+}
+
+
+
 /* 隐藏移动设备上的内容 */
 @media (max-width: 768px) {
     .text-overlay {
@@ -231,15 +261,6 @@ main {
     }
 }
 
-
-.text-overlay h1 {
-    margin: 0; /* 去掉默认的 margin */
-}
-
-.text-overlay p a {
-    color: white; /* 链接颜色 */
-    text-decoration: underline; /* 下划线 */
-}
 
 h2 {
     margin-bottom: 100px; /* 调整这个值以增加或减少间距 */
@@ -340,34 +361,7 @@ footer {
 
 
 
-/* 如果需要调整上面内容的样式 */
-.content {
-    padding: 20px; /* 给主内容部分内边距 */
-    background-color: white; /* 确保主内容是白色背景 */
-    color: black; /* 主内容字体颜色为黑色 */
-    margin: 20px; /* 添加外边距 */
-    border-radius: 8px; /* 可选：边角圆润 */
-    font-size: 25px; /* 调整文字大小 */
-}
 
-.slogan {
-    margin-top: 60px; /* 调整此值以增加或减少与上面内容的间距 */
-    text-align: center; /* 将活动口号居中 */
-    font-size: 20px; /* 设置活动口号的字体大小 */
-}
-h2 {
-    font-size: 50px; /* 设置 h2 的字体大小 */
-    margin-bottom: 40px; /* 调整标题下方的间距 */
-    color: #002855;
-    text-align: center; /* 将标题居中 */
-}
-.slogan p {
-    font-weight: bold; /* 将文本加粗 */
-    font-size: 18px; /* 可选：调整字体大小 */
-    margin-top: 10px; /* 可选：调整与上面内容的间距 */
-    text-align: center; /* 可选：居中对齐 */
-    text-align: center; /* Center text in the schedule */
-}
 
 .schedule {
     width: 80%;

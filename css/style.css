@@ -49,7 +49,10 @@
         text-align: left;
         margin-bottom: 20px;
     }
-    
+    .header-title h1 {
+    font-size: 30px;
+   
+}
     .header-title p {
         font-size: 12px; /* 在手机端调整字体大小 */
         line-height: 1.4; /* 增加行高以改善排版 */

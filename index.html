@@ -25,7 +25,10 @@
     </header>
 
     <nav>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- 汉堡菜单图标 -->
+        </div>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="overview.html">Overview</a></li>
             <li><a href="program.html">Program</a></li>
@@ -33,6 +36,16 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        // JavaScript 控制汉堡菜单的展开/收起
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    
 
     <!-- 以下部分保持不变 -->
     <div class="large-image">
@@ -54,12 +67,12 @@
 
             <div class="web-pages">
                 <div class="web-page">
-                    <p style="display: inline;">For detailed information on how to access JAIST, plese click</p>
+                    <p style="display: inline;">For detailed information on how to access JAIST...</p>
                     <p style="display: inline;"><a href="https://www.jaist.ac.jp/english/" target="_blank">Access Information for JAIST</a></p>
                 </div>
                 <hr class="dashed-line">
                 <div class="web-page">
-                    <p style="display: inline;">For more details about the workshop, pleas click</p>
+                    <p style="display: inline;">For more details about the workshop...</p>
                     <p style="display: inline;"><a href="pdfs/2024jaistupi.pdf" target="_blank">2024 JAIST-UPI Workshop</a></p>
                     <hr class="dashed-line">
                 </div>

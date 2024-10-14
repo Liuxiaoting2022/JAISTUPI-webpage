@@ -328,35 +328,6 @@ footer {
 
 
 
-
-.schedule {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.event {
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    margin: 20px 0;
-}
-
-.event .time {
-    text-align: center;
-    flex-basis: 70%; /* Time takes up 30% of the space */
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.event .description {
-    flex-basis: 65%; /* Description takes up 65% of the space */
-    text-align: left;
-    font-size: 20px;
-}
-
 .custom-text {
     font-size: 25px; /* 调整为所需的字体大小 */
     font-weight: bold; /* 设置为粗体 */

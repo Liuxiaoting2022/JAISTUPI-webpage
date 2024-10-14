@@ -39,11 +39,11 @@
 }
 
 /* 手机端响应式调整 */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .header-container {
         flex-direction: column;
         text-align: center;
-        gap: 20px; /* 减少在手机上的间距 */
+        gap: 10px; /* 减少在手机上的间距 */
     }
     
     .header-title {

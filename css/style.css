@@ -587,6 +587,10 @@ footer {
         font-size: 16px; /* 减小字体大小，增强可读性 */
     }
 
+
+     .presentation-table .author {
+        font-weight: bold;
+    }
     .presentation-table .number {
         display: none; /* 隐藏序号列以节省空间 */
     }

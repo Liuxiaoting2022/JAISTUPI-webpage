@@ -39,7 +39,7 @@
 }
 
 /* 手机端响应式调整 */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         text-align: left; /* 修改为左对齐 */

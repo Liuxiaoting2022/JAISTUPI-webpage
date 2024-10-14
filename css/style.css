@@ -333,20 +333,21 @@ footer {
     padding: 0 10px; /* 添加左右内边距以分开列 */
 }
 
-/* 响应式布局：隐藏 footer-columns 并调整 footer-section 布局 */
+/* 响应式布局：隐藏 Quick Navigation 部分和 footer-columns */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* 纵向布局 */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .footer-section {
-        margin-bottom: 20px; /* 增加底部间距 */
+        margin-bottom: 20px;
     }
 
-    .footer-columns {
-        display: none; /* 隐藏 footer-columns 部分 */
+    /* 隐藏 Quick Navigation 部分 */
+    .footer-section:nth-child(2) {
+        display: none;
     }
 }
 
@@ -356,14 +357,13 @@ footer {
     }
 
     .footer-section h3 {
-        font-size: 16px; /* 减小标题字体 */
+        font-size: 16px;
     }
 
     .footer-section p {
-        font-size: 12px; /* 减小段落字体 */
+        font-size: 12px;
     }
 }
-
 .custom-text {
     font-size: 25px; /* 调整为所需的字体大小 */
     font-weight: bold; /* 设置为粗体 */

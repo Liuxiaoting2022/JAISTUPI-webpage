@@ -37,12 +37,12 @@
     height: auto;
 }
 
-/* 手机端响应式调整 */
+/* mobile */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         text-align: center;
-        gap: 10px; /* 减少在手机上的间距 */
+        gap: 10px; 
     }
     
     .header-title {
@@ -54,16 +54,16 @@
    
 }
     .header-title p {
-        font-size: 12px; /* 在手机端调整字体大小 */
-        line-height: 1.4; /* 增加行高以改善排版 */
-        padding: 0 10px; /* 增加左右内边距，避免文字太长 */
-        white-space: nowrap; /* 避免换行，保持文字在一行显示 */
+        font-size: 12px; 
+        line-height: 1.4; 
+        padding: 0 10px; 
+        white-space: nowrap; 
 
 
     }
 
     .logo-container img {
-        max-width: 100px; /* 调整图片大小以适应手机屏幕 */
+        max-width: 100px;
     }
 }
 
@@ -156,10 +156,10 @@ main {
 
 
 .content p {
-    width: 70%; /* 将段落文字宽度设置为60%，可以根据需要调整 */
-    margin: 0 auto; /* 自动设置左右外边距，确保居中 */
-    text-align: justify; /* 可选：让段落文字两端对齐 */
-    line-height: 1.6; /* 可选：增加行间距，提高可读性 */
+    width: 70%;
+    margin: 0 auto; 
+    text-align: justify;
+    line-height: 1.6;
     font-size: 20px;
     margin-top: 10px;
 }
